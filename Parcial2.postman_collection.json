@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "ce089b45-2c49-4576-9ebe-320933cd231b",
+		"name": "Parcial2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "34150629"
+	},
+	"item": [
+		{
+			"name": "VentasConsulta",
+			"item": [
+				{
+					"name": "ProductosVendidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzU2NjksImV4cCI6MTcxOTkzNTY2OSwiZGF0YSI6eyJpZCI6OCwidXN1YXJpbyI6InVzdWFyaW9sb2NvIiwicGVyZmlsIjoiY2xpZW50ZSJ9LCJmaXJtYSI6IkFndXN0aW4gVGVpcmEifQ.lzLaChSdxCkiCddPVhM-FM2ikBSUbJJR1so1SkE6aig"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:666/ventas/consultar/productos/vendidos?fecha=2024-07-02",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"ventas",
+								"consultar",
+								"productos",
+								"vendidos"
+							],
+							"query": [
+								{
+									"key": "fecha",
+									"value": "2024-07-02"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductosEntreValores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:666/ventas/consultar/productos/entreValores?valor1=10&valor2=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"ventas",
+								"consultar",
+								"productos",
+								"entreValores"
+							],
+							"query": [
+								{
+									"key": "valor1",
+									"value": "10"
+								},
+								{
+									"key": "valor2",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductoMasVendido",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://localhost:666/ventas/consultar/productos/masVendido"
+					},
+					"response": []
+				},
+				{
+					"name": "VentasPorUsuario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:666/ventas/consultar/ventas/porUsuario?email=asd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"ventas",
+								"consultar",
+								"ventas",
+								"porUsuario"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "asd"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VentasPorProducto",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:666/ventas/consultar/ventas/porProducto?nombre=remeronDeRiver",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"ventas",
+								"consultar",
+								"ventas",
+								"porProducto"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "remeronDeRiver"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ingresos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:666/ventas/consultar/ventas/ingresos?fecha=2024-07-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "666",
+							"path": [
+								"ventas",
+								"consultar",
+								"ventas",
+								"ingresos"
+							],
+							"query": [
+								{
+									"key": "fecha",
+									"value": "2024-07-01"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AltaTienda",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzQzOTIsImV4cCI6MTcxOTkzNDM5MiwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.BDMO9KwjSU10Qh3FFCRfJltI_8Kq55badpULrm7JbxA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nombre",
+							"value": "pantalon jogin",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "44",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "pantalon",
+							"type": "text"
+						},
+						{
+							"key": "talla",
+							"value": "s",
+							"type": "text"
+						},
+						{
+							"key": "color",
+							"value": "rojo",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "postman-cloud:///1ef2d05e-627d-4030-b0af-c84c2028451c"
+						}
+					]
+				},
+				"url": "http://localhost:666/tienda/alta"
+			},
+			"response": []
+		},
+		{
+			"name": "ConsultarTienda",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:666/tienda/consultar?nombre=remeronDeBoca&tipo=camiseta&color=rojo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "666",
+					"path": [
+						"tienda",
+						"consultar"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "remeronDeBoca"
+						},
+						{
+							"key": "tipo",
+							"value": "camiseta"
+						},
+						{
+							"key": "color",
+							"value": "rojo"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "descargarCSV",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzM3MTAsImV4cCI6MTcxOTkzMzcxMCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.Q1g_cxzqVYiMlu-OECRxDEXFp2tOi4RT20gLFfuinlc"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://localhost:666/ventas/descargar"
+			},
+			"response": []
+		},
+		{
+			"name": "AltaVenta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzI0MTcsImV4cCI6MTcxOTkzMjQxNywiZGF0YSI6eyJpZCI6NiwidXN1YXJpbyI6ImRhbmllbCIsInBlcmZpbCI6ImVtcGxlYWRvIn0sImZpcm1hIjoiQWd1c3RpbiBUZWlyYSJ9.96_jmgWtk1v42SQjMM-XUIwEZic2sUbqbHsqtSxjUz0"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "asd@gmail",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "pantalon jogin",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "pantalon",
+							"type": "text"
+						},
+						{
+							"key": "talla",
+							"value": "s",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "6",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "postman-cloud:///1ef2d05e-627d-4030-b0af-c84c2028451c"
+						}
+					]
+				},
+				"url": "http://localhost:666/ventas/alta"
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarVenta",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTk4NzUxNTgsImV4cCI6MTcxOTkzNTE1OCwiZGF0YSI6eyJpZCI6NSwidXN1YXJpbyI6ImFkbWluIiwicGVyZmlsIjoiYWRtaW4ifSwiZmlybWEiOiJBZ3VzdGluIFRlaXJhIn0.9SZUvgIc1YszIzqEUFxNdUYuRccC4tvBtBAVFGp-APg"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "loco@gmail",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "RemeronDeRacing",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "camiseta",
+							"type": "text"
+						},
+						{
+							"key": "talla",
+							"value": "s",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "25",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:666/ventas/modificar"
+			},
+			"response": []
+		},
+		{
+			"name": "altaUsuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "empleado@gmail.",
+							"type": "text"
+						},
+						{
+							"key": "usuario",
+							"value": "usuarioloco",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "usuarioloco",
+							"type": "text"
+						},
+						{
+							"key": "perfil",
+							"value": "cliente",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "postman-cloud:///1ef2d05e-627d-4030-b0af-c84c2028451c"
+						}
+					]
+				},
+				"url": "http://localhost:666/registro"
+			},
+			"response": []
+		},
+		{
+			"name": "LoginUsuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "usuario",
+							"value": "usuarioloco",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "usuarioloco",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:666/login"
+			},
+			"response": []
+		}
+	]
+}
